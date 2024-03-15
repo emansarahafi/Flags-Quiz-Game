@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
-        android:text="Result"
+        android:text="@string/result"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -25,7 +25,8 @@
         android:id="@+id/iv_trophy"
         android:layout_width="wrap_content"
         android:layout_height="233dp"
-        app:srcCompat="@drawable/ic_trophy" />
+        app:srcCompat="@drawable/ic_trophy"
+        android:contentDescription="@string/trophy" />
 
     <TextView
         android:id="@+id/tv_congratulations"
@@ -33,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Congratulations!"
+        android:text="@string/congratulations"
         android:textColor="@android:color/white"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -44,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Junior"
+        android:text="@string/junior"
         android:textColor="@android:color/white"
         android:textSize="22sp"
         android:textStyle="bold" />
@@ -55,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Your Score is 9 out of 11"
+        android:text="@string/your_score_is_9_out_of_11"
         android:textColor="@android:color/secondary_text_dark"
         android:textSize="20sp" />
 
@@ -66,7 +67,7 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/round_btn"
         android:fontFamily="@font/poppins_bold"
-        android:text="FINISH"
+        android:text="@string/finish"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
