@@ -13,6 +13,14 @@
         android:theme="@style/Theme.FirstApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
