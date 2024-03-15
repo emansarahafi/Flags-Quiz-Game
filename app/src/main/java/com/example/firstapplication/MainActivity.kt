@@ -1,5 +1,4 @@
 // Student Name: Eman Sarah Afi
-
 package com.example.firstapplication
 
 import android.os.Bundle
