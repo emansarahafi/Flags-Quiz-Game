@@ -36,5 +36,6 @@ class MainActivity : AppCompatActivity() {
         tvOptionThree = findViewById(R.id.tv_option_three)
         tvOptionFour = findViewById(R.id.tv_option_four)
         btnSubmit = findViewById(R.id.btn_submit)
+
     }
 }
