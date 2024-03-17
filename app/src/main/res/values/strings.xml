@@ -6,4 +6,9 @@
     <string name="congratulations">Congratulations!</string>
     <string name="result">Result</string>
     <string name="trophy">Trophy</string>
+    <string name="flag_image_description">Image of Flag</string>
+    <string name="question_text">What country does this flag belong to?</string>
+    <string name="quiz_progress_text">0/11</string>
+    <string name="option">Option</string>
+    <string name="submit_text">SUBMIT</string>
 </resources>
