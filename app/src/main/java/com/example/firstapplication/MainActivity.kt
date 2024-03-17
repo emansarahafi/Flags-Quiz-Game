@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
     private var btnSubmit: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_questions)
 
