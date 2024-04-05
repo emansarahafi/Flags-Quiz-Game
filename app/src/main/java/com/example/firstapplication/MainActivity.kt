@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private var mCurrentPosition: Int = 1
     private var mSelectedOptionPosition: Int = 0
     private var mCorrectAnswers: Int = 0
-    val options = ArrayList<TextView>()
+    private val options = ArrayList<TextView>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -63,18 +63,19 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val question: Question = mQuestionsList!![mCurrentPosition - 1]
         ivCountry?.setImageResource(question.image)
         pbQuizProgress?.progress = mCurrentPosition
-        tvQuizProgress?.text = "$mCurrentPosition /${pbQuizProgress?.max}"
+        tvQuizProgress?.text = getString(R.string.quiz_progress_text, mCurrentPosition, pbQuizProgress?.max)
         tvQuestion?.text = question.question
         tvOptionOne?.text = question.optionOne
         tvOptionTwo?.text = question.optionTwo
         tvOptionThree?.text = question.optionThree
         tvOptionFour?.text = question.optionFour
+
         // TODO: Handle the text on the submit button based on the current question's position.
         // If the question reaches the end, then display 'Finish' in button; else, display 'Submit'.
         if (mCurrentPosition == mQuestionsList!!.size) {
-            btnSubmit?.text = "FINISH"
+            btnSubmit?.setText(R.string.finish)
         } else {
-            btnSubmit?.text = "SUBMIT"
+            btnSubmit?.setText(R.string.submit_text)
         }
     }
     private fun defaultOptionsTextView() {
@@ -136,6 +137,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                         }
                         else ->{
                             val intent = Intent(this,ResultActivity::class.java)
+
                             intent.putExtra(Constants.CORRECT_ANS,mCorrectAnswers)
                             intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionsList?.size)
 
@@ -155,17 +157,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     answerView(question.correctAnswer, R.drawable.correct_option_border_bg)
 
                     if (mCurrentPosition == mQuestionsList!!.size) {
-                        btnSubmit?.text = "FINISH"
+                        btnSubmit?.setText(R.string.finish)
                     } else {
-                        btnSubmit?.text = "GO TO NEXT QUESTION"
+                        btnSubmit?.setText(R.string.next_question)
                     }
 
                     mSelectedOptionPosition = 0
                 }
             }
-
         }
     }
+
     private fun answerView(answer : Int, drawableView : Int){
         when(answer) {
             1 ->{
