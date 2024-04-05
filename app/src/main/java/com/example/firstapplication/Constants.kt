@@ -3,6 +3,9 @@
 package com.example.firstapplication
 
 object Constants {
+    const val TOTAL_QUESTIONS: String = "total_questions"
+    const val CORRECT_ANS: String = "correct_answer"
+
     fun getQuestions(): ArrayList<Question> {
         val questionsList = ArrayList<Question>()
 
