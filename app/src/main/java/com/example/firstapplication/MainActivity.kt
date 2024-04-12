@@ -54,6 +54,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnSubmit?.setOnClickListener(this)
         mQuestionsList = Constants.getQuestions()
 
+        // Call setQuestion to display the first question
+        setQuestion()
+
     }
 
     private fun setQuestion() {
@@ -103,6 +106,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun selectedOptionView(tv:TextView, selectedOptionNum: Int){
+        defaultOptionsTextView()
         mSelectedOptionPosition = selectedOptionNum
         tv.setTextColor(Color.parseColor("#363A43"))
         tv.setTypeface(tv.typeface,Typeface.BOLD)
