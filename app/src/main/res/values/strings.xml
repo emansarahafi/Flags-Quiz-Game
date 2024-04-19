@@ -12,5 +12,9 @@
     <string name="option">Option</string>
     <string name="submit_text">SUBMIT</string>
     <string name="next_question">GO TO NEXT QUESTION</string>
-
+    <string name="icon_account_description">Icon for Account</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_label">Login</string>
+    <string name="password_autofill_hint">password</string>
 </resources>
